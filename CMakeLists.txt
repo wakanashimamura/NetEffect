@@ -8,9 +8,10 @@ find_package(Qt6 6.5 REQUIRED COMPONENTS Core Gui Widgets)
 
 qt_standard_project_setup()
 
+set(CMAKE_AUTORCC ON)
 
 qt_add_executable(NetEffect
-  WIN32 
+  WIN32
   MACOSX_BUNDLE
 
   main.cpp
@@ -18,6 +19,11 @@ qt_add_executable(NetEffect
   mainwindow.cpp
   mainwindow.h
   mainwindow.ui
+  resource.qrc
+  app.rc
+
+  wneteffect.cpp
+  wneteffect.h
 )
 
 target_link_libraries(NetEffect PRIVATE

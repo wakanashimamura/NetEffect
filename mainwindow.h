@@ -23,6 +23,7 @@
 
 #pragma once
 
+#include <QColorDialog>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -38,6 +39,18 @@ class MainWindow : public QMainWindow {
   explicit MainWindow(QWidget* parent = nullptr);
   ~MainWindow() override;
 
+ public slots:
+  void butLineColor();
+  void butPointColor();
+  void butBackground();
+
+ protected:
+  virtual void showEvent(QShowEvent* event);
+
  private:
   Ui::MainWindow* m_ui;
+
+  QColorDialog m_lineColor;
+  QColorDialog m_pointColor;
+  QColorDialog m_background;
 };

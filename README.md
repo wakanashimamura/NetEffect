@@ -20,7 +20,7 @@
 
 A Windows `.exe` build is available for download:
 
-> **https://github.com/wakanashimamura/NetEffect/releases/download/v1.0.0/NetEffect.zip**
+> **https://github.com/wakanashimamura/NetEffect/releases/download/v1.1.0/NetEffect.zip**
 
 ## License
 

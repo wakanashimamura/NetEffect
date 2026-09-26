@@ -14,16 +14,18 @@ qt_add_executable(NetEffect
   WIN32
   MACOSX_BUNDLE
 
-  main.cpp
+  src/main.cpp
 
-  mainwindow.cpp
-  mainwindow.h
-  mainwindow.ui
-  resource.qrc
-  app.rc
+  src/mainwindow.cpp
+  src/mainwindow.h
+  src/mainwindow.ui
+  src/resource.qrc
+  src/app.rc
 
-  wneteffect.cpp
-  wneteffect.h
+  src/Random.cpp
+
+  src/wneteffect.cpp
+  src/wneteffect.h
 )
 
 target_link_libraries(NetEffect PRIVATE
